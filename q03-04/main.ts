@@ -1,4 +1,19 @@
-const reducer = (state, action) => {
+interface IncrementAction {
+  type: 'increment';
+  amount: number;
+}
+interface DecrementAction {
+  type: 'decrement';
+  amount: number;
+}
+interface ResetAction {
+  type: 'reset';
+  value: number;
+}
+
+type ActionType = IncrementAction | DecrementAction | ResetAction
+
+const reducer = (state: number, action: ActionType): number => {
   switch (action.type) {
     case "increment":
       return state + action.amount;
