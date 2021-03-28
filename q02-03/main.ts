@@ -1,5 +1,11 @@
+interface EventListenerOption {
+  capture?: boolean;
+  once?: boolean;
+  passive?: boolean;
+}
+
 declare interface addEventListener {
-  (name: string, fn: () => void, option?: boolean | { capture?: boolean, once?: boolean, passive?: boolean }): void;
+  (name: string, fn: () => void, option?: boolean | EventListenerOption): void;
 }
 
 // 使用例
