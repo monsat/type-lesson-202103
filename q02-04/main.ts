@@ -1,4 +1,10 @@
-function giveId(obj) {
+interface BaseObject {
+}
+interface ExtendBaseObject extends BaseObject {
+  id: string;
+}
+
+function giveId(obj: BaseObject): ExtendBaseObject {
   const id = "本当はランダムがいいけどここではただの文字列";
   return {
     ...obj,
