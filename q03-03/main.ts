@@ -10,7 +10,7 @@ interface EventPayloads {
 }
 
 class EventDischarger<E> {
-  emit(eventName, payload) {
+  emit<K extends keyof E>(eventName: K, payload: E[K]) {
     // 省略
   }
 }
