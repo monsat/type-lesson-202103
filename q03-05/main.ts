@@ -1,4 +1,4 @@
-type Func<A, R> = (arg: A) => R;
+type Func<A, R> = undefined extends A ? (arg?: A) => R : (arg: A) => R;
 
 // 使用例
 const f1: Func<number, number> = num => num + 10;
