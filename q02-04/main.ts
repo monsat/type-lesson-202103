@@ -1,10 +1,8 @@
-interface BaseObject {
-}
-interface ExtendBaseObject extends BaseObject {
+interface WithStringId {
   id: string;
 }
 
-function giveId(obj: BaseObject): ExtendBaseObject {
+function giveId<T>(obj: T): T & WithStringId {
   const id = "本当はランダムがいいけどここではただの文字列";
   return {
     ...obj,
