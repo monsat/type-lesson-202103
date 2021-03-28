@@ -1,3 +1,7 @@
+interface IsPositiveFunc {
+  (num: number): boolean;
+}
+
 const isPositive: IsPositiveFunc = num => num >= 0;
 
 // 使用例
