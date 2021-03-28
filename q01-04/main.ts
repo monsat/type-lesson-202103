@@ -8,3 +8,5 @@ const sum: number = sumOfPos([1, 3, -2, 0]);
 // エラー例
 sumOfPos(123, 456);
 sumOfPos([123, "foobar"]);
+
+export default {}
