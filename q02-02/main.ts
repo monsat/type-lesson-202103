@@ -1,4 +1,4 @@
-type Speed = /* ここを入力 */;
+type Speed = 'slow' | 'medium' | 'fast';
 
 function getSpeed(speed: Speed): number {
   switch (speed) {
