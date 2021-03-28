@@ -1,3 +1,7 @@
+declare interface addEventListener {
+  (name: string, fn: () => void, option?: boolean | { capture?: boolean, once?: boolean, passive?: boolean }): void;
+}
+
 // 使用例
 addEventListener("foobar", () => {});
 addEventListener("event", () => {}, true);
