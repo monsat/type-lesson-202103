@@ -1,3 +1,5 @@
+declare function useState<T>(val: T): [newVal: T, setter: ( newValOrUpdater: T | ((current: T) => T) ) => T ]
+
 // 使用例
 // number型のステートを宣言 (numStateはnumber型)
 const [numState, setNumState] = useState(0);
