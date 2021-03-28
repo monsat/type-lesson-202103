@@ -8,3 +8,5 @@ isPositive(3);
 // エラー例
 isPositive('123');
 const numVar: number = isPositive(-5);
+
+export default {}

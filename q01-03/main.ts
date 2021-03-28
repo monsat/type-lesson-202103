@@ -10,3 +10,5 @@ isPositive(5);
 // エラー例
 isPositive('foo');
 const res: number = isPositive(123);
+
+export default {}

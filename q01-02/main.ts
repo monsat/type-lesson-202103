@@ -24,3 +24,5 @@ const usr: User = {
   name: 'Gombe Nanashino',
   age: 100,
 };
+
+export default {}
