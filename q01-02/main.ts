@@ -1,3 +1,9 @@
+interface User {
+  name: string;
+  age: number;
+  private: boolean;
+}
+
 function showUserInfo(user: User) {
   // 省略
 }
